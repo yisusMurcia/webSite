@@ -1,0 +1,76 @@
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #1c1c1c;
+    }
+header, footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #8591c8;
+    border: solid blue 3px;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+div{
+    margin: 5px;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 15px;
+}
+#program{
+    color: purple;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    background-color: #2beaccfd;
+    border: solid #383838 3px;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 35px;
+    color: #383838;
+}
+.section{
+    align-self: center;
+    flex-grow: 0;
+    color: orangered;
+    text-align: center;
+    font-size: 200%;
+}
+.content{
+    background-color: black;
+    border: solid #8591c8 3px;
+    border-radius: 15px;
+}
+h4, h3{
+    flex-grow: 0;
+    color: #2beaccfd;
+    text-align: center;
+    padding: 10px;
+    background-color: #383838;
+    border-radius: 10px;
+}
+p{
+    color: #8591c8;
+    text-align: justify;
+    padding: 10px;
+}
+em{
+    color: #2beaccfd;
+}
+a{
+    color: orangered;
+}
+ul{
+    color: #8591c8;
+}
+#notasDeActualización{
+    font-family: monospace;
+    font-size: larger;
+}
+.publications{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
