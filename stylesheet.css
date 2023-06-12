@@ -1,76 +1,92 @@
 html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #1c1c1c;
-    }
-header, footer{
+}
+header{
     display: flex;
     flex-wrap: wrap;
-    background-color: #8591c8;
-    border: solid blue 3px;
-    border-radius: 20px;
-    padding: 10px;
     justify-content: center;
+    background-image: url(https://i.imgur.com/udu4V57.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 40px;
+    justify-content: center;
+    border: solid 2px #8591c8;
 }
 div{
-    margin: 5px;
+    justify-content: center;
     padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: black;
+    border: solid 5px #333333;
+    border-radius: 25px;
+}
+h1{
+    color: orangered;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 40px 5px;
+    background-color: #8591c8;
+    border: solid 2px #333333;
+    border-radius: 25px;
+}
+h2{
+    color: #2beaccfd;
+    text-align: center;
+}
+h3{
+    color: orangered;
+}
+p{
+    text-align: justify;
+    background-color: #333333;
+    padding: 15px;
+    margin: 10px;
+    color: #8591c8;
+    border-radius: 15px;
+}
+li{
+    color: #8591c8;
+    padding: 5px;
+    margin: 10px;
     background-color: #333333;
     border-radius: 15px;
 }
-#program{
-    color: purple;
+a{
+    color: #8591c8;
+}
+.section{
+    background: none;
+    border: none;
+}
+.notasDeActualización{
+    font-family: monospace;
+}
+.post{
+    border-color: #8591c8;
+}
+#blogContent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: none;
+    border: none;
 }
 #logo{
     display: flex;
-    align-items: center;
     flex-grow: 0;
-    background-color: #2beaccfd;
-    border: solid #383838 3px;
+    align-items: center;
+    font-size: 200%;
+    color: #383838;
     padding: 15px;
     margin: 3px;
-    border-radius: 35px;
-    color: #383838;
+    background-color: #2beaccfd;
+    border: solid orangered 2px;
+    border-radius: 40px;
 }
-.section{
-    align-self: center;
-    flex-grow: 0;
-    color: orangered;
-    text-align: center;
-    font-size: 200%;
-}
-.content{
-    background-color: black;
-    border: solid #8591c8 3px;
-    border-radius: 15px;
-}
-h4, h3{
-    flex-grow: 0;
-    color: #2beaccfd;
-    text-align: center;
-    padding: 10px;
-    background-color: #383838;
-    border-radius: 10px;
-}
-p{
-    color: #8591c8;
-    text-align: justify;
-    padding: 10px;
-}
-em{
-    color: #2beaccfd;
-}
-a{
-    color: orangered;
-}
-ul{
-    color: #8591c8;
-}
-#notasDeActualización{
-    font-family: monospace;
-    font-size: larger;
-}
-.publications{
-    gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+#program{
+    color: purple;
 }
