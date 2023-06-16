@@ -59,6 +59,14 @@ li{
 a{
     color: #8591c8;
 }
+img{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    border: solid 8px #8591c8;
+    border-radius: 30px;
+    margin: 10px;
+}
 .section{
     background: none;
     border: none;
@@ -84,13 +92,6 @@ a{
     grid-template-columns: repeat(4, 1fr);
     background: none;
     border: none;
-}
-img{
-    position: relative;
-    right: -20%;
-    border: solid 8px #8591c8;
-    border-radius: 30px;
-    margin: 10px;
 }
 #logo{
     display: flex;

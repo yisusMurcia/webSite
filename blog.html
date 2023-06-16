@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yisusMurcia/programmind@main/stylesheet.css">
+    <header>
+        <h1 id="logo">
+            <strong id="program">program</strong>
+            mind
+        </h1>
+        <h1 class="section">Blog</h1>
+    </header>
+    <br>
+    <div id="blogContent"></div>
+    </body>
+    <script>
+    let postArray=[["etiquetashtml", "Etiquetas HTML"], ["desarrolloweb", "Desarrollo Web"]];
+    let blogContent= document.getElementById("blogContent");
+    for (let post of postArray){
+        let postDiv= document.createElement("div");
+        postDiv.setAttribute("class", "post");
+        postDiv.addEventListener("click", ()=>window.open("https://sites.google.com/view/programmind/blog/"+post[0]));
+        let postTitle= document.createElement("h2");
+        postTitle.innerText= post[1];
+        postDiv.appendChild(postTitle);
+        blogContent.appendChild(postDiv);
+    };
+    </script>
+    </html>
