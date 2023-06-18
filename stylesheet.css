@@ -68,7 +68,7 @@ div{
 }
 .sections{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 30%);
     justify-content: space-between;
     background-color: #8591c8;
     border: solid 5px #8591c8;
@@ -95,6 +95,7 @@ div{
     padding: 15px;
 }
 .leftheadline{
+    flex-basis: 3fr;
     background-color: #1c1c1c;
     border-radius: 80px 0 0 80px;
     padding: 25px;
