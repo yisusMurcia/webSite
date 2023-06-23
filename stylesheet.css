@@ -9,89 +9,33 @@ header{
     background-image: url(https://i.imgur.com/udu4V57.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
     border-radius: 20px;
     padding: 40px;
     justify-content: center;
     border: solid 2px #8591c8;
 }
-div{
-    justify-content: center;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 15px;
-    background-color: black;
-    border: solid 5px #333333;
-    border-radius: 25px;
-}
-h1{
-    color: orangered;
-    text-align: center;
-    padding: 10px;
-    margin: 10px 40px 5px;
-    background-color: #8591c8;
-    border: solid 2px #333333;
-    border-radius: 25px;
-}
-h2{
+h2, h1{
     color: #2beaccfd;
     text-align: center;
-}
-h3{
-    color: orangered;
+    background-color: black;
+    padding: 10px;
 }
 p{
+    color: #8591c8;
     text-align: justify;
-    background-color: #333333;
-    padding: 15px;
-    margin: 10px;
-    color: #8591c8;
-    border-radius: 15px;
-}
-li{
-    color: #8591c8;
-    padding: 5px;
-    margin: 10px;
-    background-color: #333333;
-    border-radius: 15px;
-}
-a{
-    color: #8591c8;
-}
-img{
-    width: 50%;
-    position: relative;
-    left: 25%;
-    border: solid 8px #8591c8;
-    border-radius: 30px;
-    margin: 10px;
-}
-.section{
-    background: none;
-    border: none;
-}
-.notasDeActualización{
-    font-family: monospace;
-}
-.codeExample{
-    display: block;
-    font-family: monospace;
-    color: whitesmoke;
     background-color: black;
-    border-radius: 0;
-    border: solid 1px #333333;
-    margin: 10px;
-    padding: 3px;
+    padding: 10px;
+    border-radius: 20px;
 }
-.post{
-    border-color: #8591c8;
+div{
+    border: solid 3px orangered;
+    border-radius: 50px;
+    background-color: #383838;
+    padding: 10px;
+    gap: 0;
 }
-#blogContent{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background: none;
-    border: none;
+ul{
+    list-style-position: inside;
 }
 #logo{
     display: flex;
@@ -107,4 +51,93 @@ img{
 }
 #program{
     color: purple;
+}
+#alertEmoji{
+    color: #8591c8;
+}
+.title{
+    color: orangered;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 10px 40px 5px;
+}
+#leftSection{
+    border-radius: 50px 5px 5px 50px;
+}
+#rightSection{
+    border-radius: 5px 50px 50px 5px;
+}
+#blogContent{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: 3px solid #8591c8;
+    background-color: black;
+}
+.post{
+    background-color: #1c1c1c;
+    color: orangered;
+    border: solid 8px purple;
+    border-radius: 30px;
+    padding: 2%;
+}
+.rightLeftDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #383838;
+    padding: 0;
+}
+.sections{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    background-color: #8591c8;
+    border: solid 5px #8591c8;
+    padding: 0;
+    gap: 15px;
+}
+.section{
+    font-size: 125%;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0;
+    padding: 20px;
+}
+.withP{
+    border-radius: 50px 50px 0 0;
+    margin-bottom: 0;
+    border-bottom: solid 2px purple;
+}
+.wihtH1{
+    background-color: #1c1c1c;
+    color: #8591c8;
+    border-radius: 0 0 40px 40px;
+    margin-top: 0;
+    padding: 10px;
+}
+.leftheadline{
+    display: flex;
+    align-items: center;
+    flex-basis: 3fr;
+    background-color: #1c1c1c;
+    border-radius: 80px 0 0 80px;
+    padding: 15px;
+    margin: 8px;
+    margin-right: 0;
+}
+.rightP{
+    flex-basis: 1fr;
+    padding: 12px;
+    margin: 8px;
+    margin-left: 0;
+    border-radius: 0 50px 50px 0;
+}
+.notasDeActualización{
+    font-family: monospace;
+    font-size: large;
+    border: solid 3px purple;
+    border-top: none;
+    padding: 15px;
 }

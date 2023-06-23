@@ -9,28 +9,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yisusMurcia/programmind@main/stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <header>
         <h1 id="logo">
             <strong id="program">program</strong>
             mind
         </h1>
-        <h1 class="section">Blog</h1>
+        <h1 class="title">Blog</h1>
     </header>
     <br>
+    <p>
+        Programmind es un proyecto en constante desarrollo y expansión. Para llegar a más personas,
+        he ampliado las herramientas que utilizo, incluyendo la plataforma Notion para publicar los posts.
+    </p>
     <div id="blogContent"></div>
-    </body>
-    <script>
-    let postArray=[["etiquetashtml", "Etiquetas HTML"], ["desarrolloweb", "Desarrollo Web"]];
+    <p>
+        Aún así, también podrás acceder a los posts que están alojados en este sitio y también en Notion.
+        Sin embargo, estos no serán actualizados ni renovados en cuanto a estructura o interfaz.
+        Puedes acceder a ellos aquí: 
+        <a href="https://sites.google.com/view/programmind/blog/desarrollo-web">Desarrollo Web</a>
+        <a href="https://sites.google.com/view/programmind/blog/etiquetashtml">Etiquetas HTML</a>
+    </p>
+</body>
+<script>
+    let postArray=[
+        ["Los pilares del Desarrollo Web", "https://programmind.notion.site/Los-pilares-del-desarrollo-Web-9e36696683884a70a8ac3e450db39c17?pvs=4"],
+        ["Entendiendo HTML", "https://programmind.notion.site/Etiquetas-HTML-adcaf805227c4b4db6473cf817b445fd?pvs=4"],
+    ];
     let blogContent= document.getElementById("blogContent");
-    for (let post of postArray){
-        let postDiv= document.createElement("div");
-        postDiv.setAttribute("class", "post");
-        postDiv.addEventListener("click", ()=>window.open("https://sites.google.com/view/programmind/blog/"+post[0]));
+    for (let post of postArray.reverse()){
         let postTitle= document.createElement("h2");
-        postTitle.innerText= post[1];
-        postDiv.appendChild(postTitle);
-        blogContent.appendChild(postDiv);
+        postTitle.setAttribute("class", "post");
+        postTitle.addEventListener("click", ()=>window.open(post[1]));
+        postTitle.innerText= postArray.length- postArray.indexOf(post) + ". "+ post[0];
+        blogContent.appendChild(postTitle);
     };
-    </script>
-    </html>
+</script>
+</html>
