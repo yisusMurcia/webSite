@@ -18,6 +18,7 @@ h2, h1{
     color: #2beaccfd;
     text-align: center;
     background-color: black;
+    border-radius: 20px;
     padding: 10px;
 }
 p{
@@ -30,7 +31,7 @@ p{
 div{
     border: solid 3px orangered;
     border-radius: 50px;
-    background-color: #383838;
+    background-color: black;
     padding: 10px;
     gap: 0;
 }
@@ -105,15 +106,34 @@ ul{
     margin: 0;
     padding: 20px;
 }
+.proyects{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    padding: 10px;
+    border-color: purple;
+    border-radius: 30px;
+    margin: 1%;
+}
+.proyect{
+    border: solid 5px #2beaccfd;
+    margin: 8px;
+    padding: 25px;
+    color: orangered;
+    background-color: #080808;
+}
 .withP{
     border-radius: 50px 50px 0 0;
     margin-bottom: 0;
-    border-bottom: solid 2px purple;
+    border: solid 5px #383838;
+    border-bottom-width: 3px;
 }
 .wihtH1{
     background-color: #1c1c1c;
     color: #8591c8;
     border-radius: 0 0 40px 40px;
+    border: solid 4px purple;
+    border-top: none;
     margin-top: 0;
     padding: 10px;
 }
@@ -137,7 +157,6 @@ ul{
 .notasDeActualización{
     font-family: monospace;
     font-size: large;
-    border: solid 3px purple;
-    border-top: none;
+    border-top-color: #383838;
     padding: 15px;
 }
