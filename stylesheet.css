@@ -18,6 +18,7 @@ h1, h2, h3{
     color: #2beaccfd;
     text-align: center;
     background-color: black;
+    font-size: 125%;
     border-radius: 20px;
     padding: 10px;
 }
