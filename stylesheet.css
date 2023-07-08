@@ -25,6 +25,7 @@ h1, h2, h3{
 p{
     color: #8591c8;
     text-align: justify;
+    line-height: 1.5;
     background-color: black;
     padding: 10px;
     border-radius: 20px;
@@ -103,6 +104,7 @@ ul{
 }
 #blogContent{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: space-evenly;
     padding: 20px;
