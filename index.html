@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,44 +16,46 @@
         </h1>
     </header>
     <br>
-    <div class="rightLeftDiv">
-        <h2 class="leftHeadline"> 
-            <span id="alertEmoji">&#x26A0;</span>
-            Sitio en constante actualización
-        </h2>
-        <p class="rightP">
-            El sitio web de Programmind está siempre en constante evolución, con cambios y actualizaciones
-            frecuentes que buscan brindar la mejor experiencia al lector. Quiero informarte que el sitio se
-            encuentra en desarrollo continuo y se realizan mejoras constantes para brindarte una experiencia
-            cada vez más enriquecedora. Te invito a estar atento a las nuevas actualizaciones y contenido que
-            se agregan regularmente. Interactúa con esta sección para mantenerte al tanto de las novedades.
-        </p>
-    </div>
-    <p>¡Gracias por formar parte de esta comunidad en crecimiento! Ultima modificación: </p>
-    <div>
-        <h1 class="withP">Proyecto Programmind</h1>
-        <p class="wihtH1">
-            Este proyecto tiene como objetivo crear un espacio para personas interesadas en la programación,
-            ofreciendo pequeñas lecciones ricas en contenido. Programmind busca brindar aprendizaje de manera
-            accesible y práctica.
-            <br><br>
-            Además, encontrarás proyectos que realicé cuando estaba comenzando en el mundo de la programación.
-            Estos proyectos están aquí para inspirarte y servir como punto de partida para tus propias ideas y
-            creatividad.
-        </p>
-        <div class="sections">
-            <h1 class="section" id="leftSection"> Blog</h1>
-            <h1 class="section"> Twitter</h1>
-            <h1 class="section" id="rightSection"> GitHub</h1>
-        </div>
-    </div>
-    <script>
-        let blog= document.getElementById("leftSection");
-        let twitter= document.getElementsByClassName("section")[1];
-        let gitHub= document.getElementById("rightSection");
-        blog.addEventListener("click", ()=>window.location.href="https://sites.google.com/view/programmind/blog");
-        twitter.addEventListener("click", ()=>window.open("https://twitter.com/theprogrammind"));
-        gitHub.addEventListener("click", ()=> window.open("https://github.com/yisusMurcia"));
-    </script>
+    <main>
+        <section class="container">
+            <p>
+                Programmind es un pequeño proyecto de programación para los que inician en el gran mundo de la
+                programación:
+            </p>
+                <ul>
+                    <li>Lecciones breves y prácticas con contenido relevante para aprender a programar.</li>
+                    <li>Proyectos de programación para inspirarte a crear.</li>
+                </ul>
+            <p>
+                ¡Bienvenido a este espacio donde la pasión por la programación se encuentra en cada línea de código!
+            </p>
+        </section>
+        <section id="otherPages">
+            <div>
+                <div class="InADiv">
+                    <h2 class="title">Proyectos</h2>
+                    <div class="proyects"></div>
+                </div>
+                <div class="InADiv">
+                    <h2 class="title">Aprende a programar</h2>
+                    <div id="blog" class= "blogContent"></div>
+                </div>
+            </div>
+            <div id="updates">
+                <h2 class="title"> Últimos cambios</h2>
+                <div id="updateNotes" class="InADiv"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/800px-Logo_of_Twitter.svg.png" alt="Twitter bird logo by Twitter, Inc." class="socialMediaImg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub logo by GitHub, Inc." class="socialMediaImg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Threads_%28app%29_logo.svg/320px-Threads_%28app%29_logo.svg.png" alt="Threads logo by Meta, Inc." class="socialMediaImg">
+        </nav>
+    </footer>
+    <script src="blog.js"></script>
+    <script src="proyectos.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

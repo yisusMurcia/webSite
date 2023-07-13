@@ -22,7 +22,7 @@
         creatividad.
     </p>
     <br>
-    <div class="proyects"></div>
+    <div id="proyects" class="proyects"></div>
     <p>
         Espero que esta lista de proyectos siga creciendo con el paso del tiempo, y que los proyectos que
         se encuentran acá sigan evolucionando con novedades y mejoras constantes, al igual que lo hace
@@ -31,20 +31,6 @@
         Te invito a estar pendiente de los cambios y actualizaciones que se realizarán en los proyectos.
         Será emocionante ver cómo se van transformando y mejorando con el tiempo.
     </p>
-    <script>
-        let proyects=[
-            ["listas", "https://sites.google.com/view/programmind/proyectos/lista"],
-            ["Cronómetro", "https://sites.google.com/view/programmind/proyectos/cronometro"],
-            ["Números aleatorios", "https://sites.google.com/view/programmind/proyectos/generadorDeNumerosAleatorios"]
-        ];
-        let proyectsContent= document.getElementsByClassName("proyects")[0];
-        for (let post of proyects){
-            let postTitle= document.createElement("h2");
-            postTitle.setAttribute("class", "proyect");
-            postTitle.addEventListener("click", ()=>window.open(post[1]));
-            postTitle.innerText= post[0];
-            proyectsContent.appendChild(postTitle);
-        };
-    </script>
+    <script src="proyectos.js"></script>
 </body>
 </html>

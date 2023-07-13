@@ -21,8 +21,9 @@ h1, h2, h3{
     font-size: 125%;
     border-radius: 20px;
     padding: 10px;
+    margin: 2px;
 }
-p{
+p, ul{
     color: #8591c8;
     text-align: justify;
     line-height: 1.5;
@@ -34,7 +35,7 @@ div{
     border: solid 3px orangered;
     border-radius: 50px;
     background-color: black;
-    padding: 10px;
+    padding: 8px;
     gap: 0;
 }
 input{
@@ -68,6 +69,16 @@ button{
 ul{
     list-style-position: inside;
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    padding:   10px 5px;
+    background-color: black;
+    border: solid 4px #2beaccfd;
+    border-radius: 30px;
+}
 #logo{
     display: flex;
     flex-grow: 0;
@@ -88,13 +99,13 @@ ul{
 }
 .title{
     color: #383838;
-    font-size:xx-large;
+    font-size:x-large;
+    align-self: center;
     text-shadow: 1px 2px  orangered;
     background-color: #8591c8;
     border: solid 2px #383838;
     border-radius: 40px;
     padding: 10px;
-    margin: 10px 40px 5px;
 }
 #leftSection{
     border-radius: 50px 5px 5px 50px;
@@ -102,7 +113,20 @@ ul{
 #rightSection{
     border-radius: 5px 50px 50px 5px;
 }
-#blogContent{
+#otherPages{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 10px;
+    margin: 10px;
+}
+.socialMediaImg{
+    width: 5%;
+    height: 5%;
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 22px;
+}
+.blogContent{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -110,6 +134,9 @@ ul{
     padding: 20px;
     border: 3px solid #8591c8;
     background-color: black;
+}
+.InADiv{
+    border: none;
 }
 .post{
     background-color: #1c1c1c;
@@ -144,7 +171,7 @@ ul{
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
-    padding: 10px;
+    padding: 8px;
     border-color: purple;
     border-radius: 30px;
     margin: 1%;
@@ -159,7 +186,7 @@ ul{
 .proyect{
     border: solid 5px #2beaccfd;
     margin: 8px;
-    padding: 25px;
+    padding: 10px;
     color: orangered;
     background-color: #080808;
 }
@@ -200,4 +227,11 @@ ul{
     font-size: large;
     border-top-color: #383838;
     padding: 15px;
+}
+.container{
+    background-color: black;
+    margin: 15px;
+    padding: 5px;
+    border: solid 3px orangered;
+    border-radius: 30px;
 }
