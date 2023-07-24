@@ -30,7 +30,7 @@ fetch('https://cdn.jsdelivr.net/gh/yisusMurcia/webSite@main/notasDeActualizaci%C
     document.getElementById('updateNotes').appendChild(ul);
     });
 let element = document.createElement('div');
-fetch('https://cdn.jsdelivr.net/gh/yisusMurcia/programmind@main/proyectos.html')
+fetch('https://cdn.jsdelivr.net/gh/yisusMurcia/webSite@main/proyectos.html')
 .then(response => response.text())
 .then(data => {
 let element = document.createElement('div');
