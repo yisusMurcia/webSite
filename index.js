@@ -19,7 +19,7 @@ for (let i= 0; i<3; i++){
     proyectTitle.addEventListener("click", ()=>window.open(proyect[1]));
     proyectDiv.appendChild(proyectTitle);
 };
-fetch('https://cdn.jsdelivr.net/gh/yisusMurcia/programmind@main/notasDeActualización.html')
+fetch('https://cdn.jsdelivr.net/gh/yisusMurcia/webSite@main/notasDeActualizaci%C3%B3n.html')
     .then(response => response.text())
     .then(data => {
     let elemento = document.createElement('div');
