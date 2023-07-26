@@ -1,9 +1,10 @@
 let blog= document.getElementById("blog");
 let inADiv= document.getElementsByClassName("inADiv");
 let update= document.getElementById("updates");
-update.addEventListener("click", ()=> window.open("https://sites.google.com/view/programmind/notasdeactualizaci%C3%B3n"));
-inADiv[0].addEventListener("click", ()=> window.open("https://sites.google.com/view/programmind/blog"));
-inADiv[1].addEventListener("click", ()=> window.open("https://sites.google.com/view/programmind/blog"));
+let titles= document.getElementsByClassName("title");
+titles[0.addEventListener("click", ()=> window.open("https://sites.google.com/view/programmind/notasdeactualizaci%C3%B3n"));
+titles[1].addEventListener("click", ()=> window.open("https://sites.google.com/view/programmind/blog"));
+titles[2].addEventListener("click", ()=> window.open("https://sites.google.com/view/programmind/blog"));
 let proyectDiv= document.getElementsByClassName("proyects")[0];
 for (let i= 0; i<3; i++){
     let post= postArray[i];
